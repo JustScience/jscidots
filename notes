@@ -10,6 +10,7 @@
 ## CHEATSHEET ##
 # Symbolic Linking
 # ln -s /Users/jsci/.jscidots/directory?/.file_name /Users/jsci/.file_name
+# ln -s /Users/jsci/.jscidots/.gitconfig /Users/jsci/.gitconfig
 
 # Copy SSH Key
 pbcopy < ~/.ssh/id_rsa.pub

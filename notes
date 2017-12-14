@@ -1,6 +1,7 @@
 ## TODO ##
+# Verify Brew Function and Remove Brew Directory
 # Link MacOS Directory to Install
-# Install RBENV w/ Ruby & Rails Versions
+# Install RBENV w/ Ruby & Rails Versions ???
 # Link Editor Directory to Install
 # Breakout Bash Files to SubDirectory
 # Breakout Git Files to SubDirectory

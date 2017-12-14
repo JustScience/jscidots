@@ -1,0 +1,14 @@
+## TODO ##
+# Link MacOS Directory to Install
+# Install RBENV w/ Ruby & Rails Versions
+# Link Editor Directory to Install
+# Breakout Bash Files to SubDirectory
+# Breakout Git Files to SubDirectory
+
+
+## CHEATSHEET ##
+# Symbolic Linking
+# ln -s /Users/jsci/.jscidots/directory?/.file_name /Users/jsci/.file_name
+
+# Copy SSH Key
+pbcopy < ~/.ssh/id_rsa.pub

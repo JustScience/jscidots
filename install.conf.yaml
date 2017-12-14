@@ -5,7 +5,15 @@
 - clean: ['~']
 
 - shell:
+  - [xcode-select --instal]
   - [git submodule update --init --recursive, Installing submodules]
+  - ['ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"', Installing brew]
+  - [brew tap Homebrew/bundle]
+  - [brew bundle]
+  - [rbenv install 2.4.2 && rbenv global 2.4.2] # Find Current Ruby Version
+  - [gem install rails -v 5.1.4] # Find Current Rails Version
+  - [gem install sass]
+
 
 - link:
     # Terminal

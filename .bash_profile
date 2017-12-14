@@ -1,8 +1,8 @@
 # Bash Profile
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 
-alias srcit="source ~/.bash_profile"
-alias vimit="vim ~/.bash_profile"
+alias srcit="source ~/.jscidots/.bash_profile"
+alias vimit="vim ~/.jscidots/.bash_profile"
 
 
 # Exports
@@ -38,13 +38,16 @@ alias la='ls -la'
 
 
 # GIT
-alias gs='git status '
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit -m '
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add .'
+alias gb='git branch'
+alias gcm='git commit -m'
 alias gd='git diff'
-alias go='git checkout '
-alias grb='git rebase '
+alias go='git checkout'
+alias grb='git rebase'
+alias gpush='git push'
+alias fpush='git push --force-with-lease'
 
 
 # Rails

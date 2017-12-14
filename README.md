@@ -1,2 +1,2 @@
 # jscidots
-JustScience Dotfiles w/ Dotbot and Dot-Brew
+Dotfiles by JustScience w/ help from Dotbot and Dotbot-Brew

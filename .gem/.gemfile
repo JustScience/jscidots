@@ -1,0 +1,4 @@
+gem install bundle
+brew install rbenv ruby-build
+gem install rails
+sudo gem install sass

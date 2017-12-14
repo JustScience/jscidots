@@ -1,0 +1,43 @@
+# Navigate
+alias .='pwd'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+
+# Inspect
+alias ls='ls -GFh'
+alias ll='ls -l'
+alias la='ls -la'
+
+# GIT
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit -m '
+alias gd='git diff'
+alias go='git checkout '
+alias grb='git rebase '
+
+# Rails
+alias rdbm="rake db:migrate"
+
+# Ruby
+alias rbels="rbenv install --list"
+alias rbeins="rbenv install "
+alias rbevrs="vim ~/.rbenv/versions"
+alias rbehm="cd /Users/jsci/.rbenv/versions/2.4.2/lib/ruby/gems; ls"
+
+# PostGres
+alias pgs="pg_ctl -D /usr/local/var/postgres start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# MySQL
+alias sqls="mysql.server start"
+alias sqlstop="mysql.server stop"
+
+# Sublime
+alias sbl="sublime ."
+
+# Bash Profile
+alias srcit="source ~/.bash_profile"
+alias vimit="vi ~/.bash_profile"

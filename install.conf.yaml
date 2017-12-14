@@ -1,10 +1,83 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
 - link:
-    ~/.bash_profile: bash_profile
-    ~/.gitconfig: gitconfig
+    # Terminal
+    ~/.bash_profile: .bash_profile
+    ~/.bashrc: .bashrc
+
+    # GIT
+    ~/.gitconfig: .gitconfig
+    ~/.gitignore: .gitignore
+    ~/.gitattributes: .gitattributes
+
+    # SSH
     ~/.ssh/config:
         path: ssh/config
         create: true
+
+    # Editors:
+    ~/.editorconfig: editor/editorconfig
+
+
+
+- tap:
+    - caskroom/fonts
+    - homebrew/dupes
+
+- brew:
+    - git
+    - git-lfs
+
+- brew: [
+        bash,
+        bash-completion,
+        homebrew/completions/brew-cask-completion,
+        heroku/brew/heroku,
+        imagemagick --with-webp,
+        mysql,
+        node,
+        postgresql,
+        rbenv ruby-build,
+        redis,
+        sqlite3,
+        unrar,
+        vim --with-override-system-vi,
+        z,
+
+        homebrew/dupes/grep,
+        homebrew/dupes/nano,
+        homebrew/dupes/openssh,
+        homebrew/dupes/unzip
+      ]
+
+- cask: [
+        adobe-creative-cloud,
+        colorpicker, 
+        discord,
+        dropbox,
+        djay-pro,
+        iterm2, 
+        firefox,
+        google-chrome,
+        opera,
+        postico,
+        rubymine, 
+        screenflick, 
+        sequel-pro,
+        slack,
+        skype,
+        sourcetree,
+        spotify,
+        sublime_text, 
+        vlc
+      ]
+
 
 

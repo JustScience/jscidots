@@ -1,0 +1,20 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"Autoprefixer",
+		"Emmett",
+		"Emmett Css Snippets",
+		"Package Control",
+		"Sass",
+		"SCSS",
+		"Slim",
+		"Slim2Html",
+		"SideBarEnhancements",
+		"SublimeLinter",
+	]
+}

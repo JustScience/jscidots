@@ -1,10 +1,8 @@
-
-# --- Sourcetree Generated ---
-Host JustScience-Bitbucket
+Host *
 	HostName bitbucket.org
 	User JustScience
 	PreferredAuthentications publickey
-	IdentityFile /Users/jsci/.ssh/JustScience-Bitbucket
+	IdentityFile /Users/jsci/.ssh/id_rsa
 	UseKeychain yes
 	AddKeysToAgent yes
-# ----------------------------
+

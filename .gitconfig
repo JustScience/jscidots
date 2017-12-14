@@ -1,15 +1,29 @@
 [user]
 	name = JSci
 	email = thejustscience@gmail.com
+
 [core]
-	excludesfile = /Users/jsci/.gitignore_global
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
 [commit]
 	template = /Users/jsci/.stCommitMsg
+
 [color]
 	ui = true
+
+[alias]
+	fpush = push --force
+	undocommit = reset HEAD~
+	hreset = reset --hard
+
+#[fetch]
+#	prune = true

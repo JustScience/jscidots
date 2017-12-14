@@ -1,30 +1,15 @@
-alias gs='git status '
-alias ga='git add'
-alias gaa='git add .'
-alias gb='git branch '
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gd='git diff'
-alias go='git checkout '
-alias grb='git rebase '
-
-alias rdbm="rake db:migrate"
-
-alias rbels="rbenv install --list"
-alias rbeins="rbenv install "
-alias rbevrs="vim ~/.rbenv/versions"
-alias rbehm="cd /Users/jsci/.rbenv/versions/2.4.2/lib/ruby/gems; ls"
-
-alias pgs="pg_ctl -D /usr/local/var/postgres start"
-alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-
-alias sqls="mysql.server start"
-alias sqlstop="mysql.server stop"
-
-alias sbl="sublime ."
+# Bash Profile
+[[ -s ~/.bashrc ]] && source ~/.bashrc
 
 alias srcit="source ~/.bash_profile"
-alias vimit="vi ~/.bash_profile"
+alias vimit="vim ~/.bash_profile"
+
+
+# Exports
+export EDITOR=sublime
+
+export MY_HOME="~/"
+alias home="cd ${MY_HOME}"
 
 export RAILS_HOME="~/rails"
 alias rls="cd ${RAILS_HOME}"
@@ -35,17 +20,61 @@ alias zudo="cd ${ZUDO_HOME}"
 export MKPD_HOME="~/rails/mkpd2"
 alias mkpd="cd ${MKPD_HOME}"
 
+export DOTS_HOME="~/.jscidots"
+alias dots="cd ${DOTS_HOME}"
 
 
-[[ -s ~/.bashrc ]] && source ~/.bashrc
+# Navigate
+alias .='pwd'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
 
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+# Inspect
 alias ls='ls -GFh'
 alias ll='ls -l'
-alias ddu='sh ~/Dropbox/Development/Themes\ WordPress/dobsondev-underscores/ddunderscores-osx.sh'
+alias la='ls -la'
+
+
+# GIT
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit -m '
+alias gd='git diff'
+alias go='git checkout '
+alias grb='git rebase '
+
+
+# Rails
+alias rdbm="rake db:migrate"
+
+
+# Ruby
+alias rbels="rbenv install --list"
+alias rbeins="rbenv install "
+alias rbevrs="vim ~/.rbenv/versions"
+alias rbehm="cd /Users/jsci/.rbenv/versions/2.4.2/lib/ruby/gems; ls"
+
+
+# PostGres
+alias pgs="pg_ctl -D /usr/local/var/postgres start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+
+# MySQL
+alias sqls="mysql.server start"
+alias sqlstop="mysql.server stop"
+
+
+# Sublime
+alias sbl="${EDITOR} ."
+
+
+# Prompt
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 function prompt {
   local BLACK="\[\033[0;30m\]"
@@ -72,8 +101,17 @@ function prompt {
 
 prompt
 
+
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+
+# Hush
+# cmp -s $HOME/.hushlogin /etc/motd
+#   if [ $? != 0 ]; then
+#     tee $HOME/.hushlogin < /etc/motd
+#     echo -n "Press Enter to continue: " && read ans
+#   fi

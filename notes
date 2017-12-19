@@ -1,4 +1,8 @@
+
+##########
 ## TODO ##
+##########
+
 # Verify Brew Function and Remove Brew Directory
 # Link MacOS Directory to Install
 # Install RBENV w/ Ruby & Rails Versions ???
@@ -7,10 +11,13 @@
 # Breakout Git Files to SubDirectory
 
 
+################
 ## CHEATSHEET ##
-# Symbolic Linking
-# ln -s /Users/jsci/.jscidots/directory?/.file_name /Users/jsci/.file_name
-# ln -s /Users/jsci/.jscidots/.gitconfig /Users/jsci/.gitconfig
+################
 
-# Copy SSH Key
+# Symbolic Linking #
+ln -s /Users/jsci/.jscidots/directory?/.file_name /Users/jsci/.file_name
+ln -s /Users/jsci/.jscidots/.gitconfig /Users/jsci/.gitconfig
+
+# Copy SSH Key #
 pbcopy < ~/.ssh/id_rsa.pub
